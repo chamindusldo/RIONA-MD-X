@@ -1,0 +1,31 @@
+{
+  "name": "RIONA-MD",
+  "description": "Javascript WhatsApp bot created by Dark lion team",
+  "logo": "https://i.ibb.co/mFL4JNb/RIONA.jpg",
+  "keywords": ["bot"],
+  "success_url": "/",
+
+  "env": {
+    "SESSION_ID": {
+      "description": "Put the session-id here.",
+      "required": true
+    },  
+
+    "GITHUB_USERNAME": {
+      "description": "Put your github username",
+      "required": true
+    },
+    
+    "GITHUB_AUTH_TOKEN": {
+      "description": "Put your github auth token",
+      "required": true
+    }   
+},
+
+     "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
+  "stack": "heroku-24"
+}
